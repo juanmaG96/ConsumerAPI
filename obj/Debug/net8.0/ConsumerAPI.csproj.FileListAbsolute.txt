@@ -33,3 +33,4 @@ D:\juan\facultad\Sistemas Distribuidos\TPs\Casos_Practicos\APIs-RabbitMQ\Consume
 D:\juan\facultad\Sistemas Distribuidos\TPs\Casos_Practicos\APIs-RabbitMQ\ConsumerAPI\ConsumerAPI\obj\Debug\net8.0\ConsumerAPI.pdb
 D:\juan\facultad\Sistemas Distribuidos\TPs\Casos_Practicos\APIs-RabbitMQ\ConsumerAPI\ConsumerAPI\obj\Debug\net8.0\ConsumerAPI.genruntimeconfig.cache
 D:\juan\facultad\Sistemas Distribuidos\TPs\Casos_Practicos\APIs-RabbitMQ\ConsumerAPI\ConsumerAPI\obj\Debug\net8.0\ref\ConsumerAPI.dll
+D:\juan\facultad\Sistemas Distribuidos\TPs\Casos_Practicos\APIs-RabbitMQ\ConsumerAPI\ConsumerAPI\obj\Debug\net8.0\ConsumerAPI.sourcelink.json

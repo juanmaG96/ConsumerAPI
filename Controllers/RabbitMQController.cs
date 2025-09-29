@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ConsumerAPI.Models;
 using ConsumerAPI.Services;
 
-namespace PublisherAPI.Controllers
+namespace ConsumerAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

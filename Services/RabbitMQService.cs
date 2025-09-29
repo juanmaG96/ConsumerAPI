@@ -26,6 +26,7 @@ namespace ConsumerAPI.Services
         public RabbitMQService(IOptions<RabbitMQSettings> config)
         {
             _config = config.Value;
+            _queueName = "qDefault";
 
             _connectionFactory = new ConnectionFactory()
             {
