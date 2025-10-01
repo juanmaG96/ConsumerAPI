@@ -68,6 +68,15 @@ namespace ConsumerAPI.Services
             // string? _queueName = queueName != "" ? queueName : this.QueueName;
             // Si no se pasa una cola, usa la definida en appsettings.json
             string queueToUse = string.IsNullOrEmpty(queueName) ? _queueName : queueName;
+
+            // 🔥 aseguramos que la cola exista antes de consumir
+            _channel.QueueDeclare(
+                queue: queueToUse,
+                durable: false,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null
+            );
             _channel.BasicConsume(queue: queueToUse,
                                  autoAck: true,
                                  consumer: consumer);
@@ -102,6 +111,16 @@ namespace ConsumerAPI.Services
             };
 
             string queueToUse = string.IsNullOrEmpty(queueName) ? _queueName : queueName;
+
+            // 🔥 aseguramos que la cola exista antes de consumir
+            _channel.QueueDeclare(
+                queue: queueToUse,
+                durable: false,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null
+            );
+            
             _channel.BasicConsume(queue: queueToUse,
                                  autoAck: false,   // autoAck en false desactiva el modo de confirmacion automatica
                                  consumer: consumer);
